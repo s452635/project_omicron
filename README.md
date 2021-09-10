@@ -25,7 +25,7 @@ Opis współpracy reguł (zawartych w modułach: menus.pl oraz arr_dep.pl) w tra
 
 W prawym górnym rogu zostało wyszczególnione wywołanie reguły findall, które w połączeniu z odpowiednią wersją routeIdfinder przeszukuje bazę i zapisuje powiązane dane do listy.
 
-![image](https://user-images.githubusercontent.com/66226017/132905752-5e304389-455b-48fc-9e02-fb49af3ace67.png)
+![image](https://user-images.githubusercontent.com/66226017/132906823-db28f371-3cab-476c-9704-5eac218c1e7f.png)
 
 # Przykład użycia.
 
