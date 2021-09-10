@@ -57,7 +57,7 @@ menu_arr_dep() :-
     % question strings
 
     tty_clear(),
-    nl, make_header_q( "Arrivals and Departures" ), make_subheader_questions(), nl,
+    nl, make_header_q( "Arrivals and Departures" ), make_subheader_questions(),
 
     question_stop( QSTRBLK_STOP, Stop ),
     question_weekday( QSTRBLK_WEEKDAY, Weekday ),

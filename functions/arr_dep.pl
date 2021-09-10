@@ -89,18 +89,32 @@ inner_init_arr_dep( ListArr, ListDep, Stop, TableHeader ) :-
 %   id finders
 %
 
-routeId_finder( "arr", Stop, date(Day,Hour,Minute), Span, RouteId, date(FoundDay,FoundHour,FoundMinute), SortableDate ) :-
+routeId_finder(
+    "arr", Stop, date(Day,Hour,Minute),
+    Span, RouteId, date(FoundDay,FoundHour,FoundMinute), SortableDate
+) :-
     link( _, Stop, date(FoundDay,FoundHour,FoundMinute), _, RouteId ),
-    time_calc( date(Day,Hour,Minute), date(FoundDay,FoundHour,FoundMinute), time(DiffHour,DiffMinute) ),
+    time_calc(
+        date(Day,Hour,Minute),
+        date(FoundDay,FoundHour,FoundMinute),
+        time(DiffHour,DiffMinute)
+    ),
     (
         DiffHour < Span;
         DiffHour = Span, DiffMinute = 0
     ),
     SortableDate is DiffHour*100 + DiffMinute.
 
-routeId_finder( "dep", Stop, date(Day,Hour,Minute), Span, RouteId, date(FoundDay,FoundHour,FoundMinute), SortableDate ) :-
+routeId_finder(
+    "dep", Stop, date(Day,Hour,Minute),
+    Span, RouteId, date(FoundDay,FoundHour,FoundMinute), SortableDate
+) :-
     link( Stop, _, date(FoundDay,FoundHour,FoundMinute), _, RouteId ),
-    time_calc( date(Day,Hour,Minute), date(FoundDay,FoundHour,FoundMinute), time(DiffHour,DiffMinute) ),
+    time_calc(
+        date(Day,Hour,Minute),
+        date(FoundDay,FoundHour,FoundMinute),
+        time(DiffHour,DiffMinute)
+    ),
     (
         DiffHour < Span;
         DiffHour = Span, DiffMinute = 0
