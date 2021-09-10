@@ -11,7 +11,7 @@
 
 
 database_atom( Database, DatabaseRef ) :-
-    table_concat( ["data/dynamic_", Database, ".pl"], DatabaseRefStr ),
+    table_concat( ["data/dynamic_", Database, ".txt"], DatabaseRefStr ),
     atom_string( DatabaseRef, DatabaseRefStr ).
 
 database_clean( Database ) :-

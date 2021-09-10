@@ -1,0 +1,5 @@
+" │ 112BPOWA   │ mon, 13:01 │ from Secile                         │ ".
+" │ 115BSAPH   │ mon, 15:52 │ from West Bluetrich                 │ ".
+" │ 118BPOWA   │ mon, 19:01 │ from Secile                         │ ".
+" │ 118LINDA   │ mon, 19:42 │ from Vurku                          │ ".
+" │ 121BSAPH   │ mon, 21:52 │ from West Bluetrich                 │ ".
